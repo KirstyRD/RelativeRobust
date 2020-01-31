@@ -1,0 +1,9 @@
+#!/bin/bash
+from=$1
+to=$2
+
+mkdir data/cifar_r1
+
+./gen_both.sh robust_r1.csv adv_r1.csv $from $to 128 cifar_r1
+./get_morerob.sh adv_r1.csv morerob_r1.csv data/cifar_r1
+./get_rel_rob.sh robust_r1.csv relrob_r1.csv data/cifar_r1

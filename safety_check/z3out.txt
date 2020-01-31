@@ -1,0 +1,673 @@
+processing input of index 0 in the dataset: 
+the shape of the input is (2,)
+
+================================================================
+
+start checking the safety of layer 0
+WARNING (theano.tensor.blas): We did not find a dynamic library in the library_dir of the library we use for blas. If you use ATLAS, make sure to compile it with dynamics library.
+
+================================================================
+Round 1 of layer 0 for image 0
+(1) get a manipulated input ...
+current layer: 0.
+current index: (0, -1).
+current operated image is saved into data/twoDcurve_pic/temp.png
+(2) synthesise region from [0, 1]...
+inputLayer layer, synthesising region ...
+nextSpan.keys(): [0, 1]
+inputLayer layer, synthesising precision ...
+dimensions to be considered: {0: 1.0, 1: 1.0}
+spans for the dimensions: {0: 1.0, 1: 1.0}
+(3) safety analysis ...
+the right class is 1
+the confidence is 0.961147
+safety analysis for layer 0 ... 
+9.0 regions need to be checked. 
+Class changed! from 1 into 0
+ran througn the neural network for 9 times.
+span: {0: 1.0, 1: 1.0} numspan: {0: 1.0, 1: 1.0}
+(4) add new images ...
+the dimensions of the images that are changed in the this round: [(0,), (1,)]
+(5) an adversarial example has been found.
+euclidean distance 1.41421354799
+L1 distance 1.9999999796643066
+L0 distance 2
+manipulated percentage distance 1.0
+
+euclidean distance 1.00000002034
+L1 distance 1.0000000203356934
+L0 distance 1
+manipulated percentage distance 0.5
+
+(6) no adversarial example is found in this layer within the distance restriction.
+
+================================================================
+
+start checking the safety of layer 1
+
+================================================================
+Round 1 of layer 1 for image 0
+(1) get a manipulated input ...
+current layer: 0.
+current index: (0, -1).
+current operated image is saved into data/twoDcurve_pic/temp.png
+(2) synthesise region from [0, 1]...
+inputLayer layer, synthesising region ...
+nextSpan.keys(): [0, 1]
+inputLayer layer, synthesising precision ...
+dimensions to be considered: {0: 1.0, 1: 1.0}
+spans for the dimensions: {0: 1.0, 1: 1.0}
+(3) add new intermediate node ...
+(1) get a manipulated input ...
+current layer: 1.
+current index: (1, 0).
+current operated image is saved into data/twoDcurve_pic/temp.png
+(2) synthesise region from [0, 1]...
+dense layer, synthesising region ...
+found the region to work 
+nextSpan.keys(): [19, 7]
+dense layer, synthesising precision ...
+dimensions to be considered: {19: 0.07778799533843994, 7: 0.07778799533843994}
+spans for the dimensions: {19: 44.0, 7: 22.0}
+(3) safety analysis ...
+the right class is 1
+the confidence is 0.961147
+safety analysis for layer 1 ... 
+4005.0 regions need to be checked. 
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -1.3961048
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -1.3183168
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -1.2405288
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -1.1627408
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -1.0849528
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -1.0071648
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.92937684
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.85158885
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.77380085
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.69601285
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.61822486
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.54043686
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.46264887
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.38486087
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.30707288
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.22928488
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.15149689
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == -0.07370889
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.0040791035
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.0818671
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.1596551
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.23744309
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.31523108
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.39301908
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.47080708
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.5485951
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.62638307
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.70417106
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.78195906
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.85974705
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 0.93753505
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 1.015323
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+l in prevspan.keys()1
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+k in span.keys()19
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,20] ==   variable[1,0,1] * 1.3879299 +  variable[1,0,2] * -1.0767779 + -0.94090474
+variable[1,1,20] == 1.093111
+k in span.keys()7
+variable[1,1,k+1] = Real('1_y_%s' % (k+1))
+==============================================
+eval
+==============================================
+variable[1,1,8] ==   variable[1,0,1] * 0.55478877 +  variable[1,0,2] * 0.1345072 + -0.90086836
+variable[1,1,8] == -0.7983982
+l in prevspan.keys()0
+variable[1,0,l+1] = Real('1_x_%s' % (l+1))
+
