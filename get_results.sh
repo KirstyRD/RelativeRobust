@@ -1,7 +1,7 @@
 #!/bin/bash                                                                                          
 from=$1
 to=$2
-manip=$3 #256 192 128 64                                                                             
+manip=$3 #256 128 64 32 16 8 4
 r=$4 #10 20                                                                                          
 
 folder="r${r}_m${manip}"
