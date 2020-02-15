@@ -1,5 +1,5 @@
 #!/bin/bash
-folder=data/$6
+folder=data/$7
 
 #output results fie
 outfile_rob=$1
@@ -7,7 +7,8 @@ outfile_adv=$2
 from=$3
 to=$4
 sequ=$(expr $4 - $3 + 1)
-radius=$5
+manip=$5
+radius=$6
 
 # create folders
 for x in $(seq $sequ)
@@ -24,7 +25,7 @@ do
     y=$(expr $x + $from - 1)
     #run DLV
     echo $y
-    python2 DLV.py $y 20 10 20 $radius $folder
+    python2 DLV.py $y 20 10 $radius $manip $folder
     
     #check folder
     adv="F"
