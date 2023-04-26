@@ -8,7 +8,7 @@ The scripts in this repository can be used to reproduce the results presented in
 3. Manipulation step size for robustness, out of 128.
 4. Search radius, i.e. the maximum Manhattan distance between original image and perturbed images.
 
-The original DLV tool and theory paper can be found [here](https://github.com/VeriDeep/DLV).
+The DLV tool and theory paper can be found [here](https://github.com/VeriDeep/DLV).
 
 Requirements to run this portion of code are:
 - Python 2.7 
