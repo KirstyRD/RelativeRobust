@@ -1,6 +1,6 @@
 # Relative Robustness of Quantized Neural Networks Against Adversarial Attack
 
-The scripts in this repository can be sued to reproduce the results presented in the paper. 
+The scripts in this repository can be used to reproduce the results presented in [the paper](https://www.semanticscholar.org/paper/Relative-Robustness-of-Quantized-Neural-Networks-Duncan-Komendantskaya/d16e076610a8f329f8de557158d45d52d057562b) which was published in ICJNN 2020. 
 
 **get_results.sh** simultaneously produces results for the relative robustness of a quantized neural network and the transfer of adversarial attacks from a full precision to a quantized network. Input parameters are:
 1. Index of test dataset to begin results,
@@ -8,8 +8,7 @@ The scripts in this repository can be sued to reproduce the results presented in
 3. Manipulation step size for robustness, out of 128.
 4. Search radius, i.e. the maximum Manhattan distance between original image and perturbed images.
 
-The original DLV tool and theory paper can be found at:
-https://github.com/VeriDeep/DLV
+The original DLV tool and theory paper can be found [here](https://github.com/VeriDeep/DLV).
 
 Requirements to run this portion of code are:
 - Python 2.7 
@@ -23,7 +22,7 @@ Requirements to run this portion of code are:
 - pySMT
 - z3
 
-Z3 installation instructions: https://github.com/Z3Prover/z3
+[Z3 installation instructions](https://github.com/Z3Prover/z3)
 
 Requirements for the quantization code are as follows:
 - Python 3
